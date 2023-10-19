@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    background: #fff;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(#fff, #e8e8e8);
+}
+
+ul a {
+    display: flex;
+}
+
+ul {
+    padding: 5px 0 5px 0;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+li {
+    cursor: pointer;
+    color: #484848;
+    min-width: 80px;
+    margin: auto;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+li:hover {
+    border-bottom: solid 2px black;
+}
+
+li:active {
+    transform: translateY(4px);
+}
+
+@keyframes spring {
+    15% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.2, 1.1);
+    }
+
+    40% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(0.95, 0.95);
+    }
+
+    75% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.05, 1);
+    }
+
+    100% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1, 1);
+    }
+}
+
+h1 {
+    font-family: "Roboto";
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    background-image: url('https://images.pexels.com/photos/13940670/pexels-photo-13940670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.titulo {
+    color: #fff;
+}
+
+#overlay {
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+}
+
+.container2 {
+    border-top: solid 1px;
+    border-color: #e8e8e8;
+    width: 100%;
+    height: 500px;
+    background-color: #484848;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#logo1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.controle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button a {
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: red;
+    padding: 20px 40px 20px 40px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
